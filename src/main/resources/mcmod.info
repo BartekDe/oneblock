@@ -1,0 +1,16 @@
+[
+{
+  "modid": "oneblock",
+  "name": "One Block",
+  "description": "A mod which adds one block.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "github.com/BartekDe",
+  "updateUrl": "",
+  "authorList": ["BartekDe"],
+  "credits": "absolutely no one",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
