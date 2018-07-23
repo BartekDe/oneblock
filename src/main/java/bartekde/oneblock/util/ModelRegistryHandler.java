@@ -1,5 +1,6 @@
 package bartekde.oneblock.util;
 
+import bartekde.oneblock.init.MyBlocks;
 import bartekde.oneblock.init.MyItems;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -15,6 +16,7 @@ public class ModelRegistryHandler {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         registerModel(MyItems.BASIC_ITEM);
+        registerModel(Item.getItemFromBlock(MyBlocks.BASIC_BLOCK));
     }
 
     private static void registerModel(Item item) {
