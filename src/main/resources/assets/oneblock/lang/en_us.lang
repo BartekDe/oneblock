@@ -1,2 +1,8 @@
 item.oneblock.itemBasic.name=Basic Item
 tile.oneblock.blockBasic.name=Basic Block
+itemGroup.oneblock.tabOneBlock=One Block
+item.oneblock.oneBlockAxe.name=One Block Axe
+item.oneblock.oneBlockPickaxe.name=One Block Pickaxe
+item.oneblock.oneBlockSword.name=One Block Sword
+item.oneblock.oneBlockShovel.name=One Block Shovel
+item.oneblock.oneBlockHoe.name=One Block Hoe

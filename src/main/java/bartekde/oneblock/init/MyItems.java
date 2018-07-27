@@ -11,4 +11,14 @@ public class MyItems {
 
     public static final Item BASIC_ITEM = null;
 
+    public static final Item ONE_BLOCK_AXE = null;
+
+    public static final Item ONE_BLOCK_PICKAXE = null;
+
+    public static final Item ONE_BLOCK_SWORD = null;
+
+    public static final Item ONE_BLOCK_SHOVEL = null;
+
+    public static final Item ONE_BLOCK_HOE = null;
+
 }

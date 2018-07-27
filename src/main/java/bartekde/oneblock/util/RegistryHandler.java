@@ -3,8 +3,9 @@ package bartekde.oneblock.util;
 import bartekde.oneblock.OneBlock;
 import bartekde.oneblock.block.BlockBasic;
 import bartekde.oneblock.init.MyBlocks;
-import bartekde.oneblock.item.ItemBasic;
+import bartekde.oneblock.item.*;
 
+import bartekde.oneblock.materials.OneBlockMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -28,7 +29,12 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void registerItems(Register<Item> event) {
         final Item[] items = {
-                new ItemBasic("itemBasic", "basic_item")
+                new ItemBasic("itemBasic", "basic_item"),
+                new ItemOneBlockAxe(OneBlockMaterials.ONE_BLOCK_TOOL, "oneBlockAxe", "one_block_axe"),
+                new ItemOneBlockPickaxe(OneBlockMaterials.ONE_BLOCK_TOOL, "oneBlockPickaxe", "one_block_pickaxe"),
+                new ItemOneBlockSword(OneBlockMaterials.ONE_BLOCK_TOOL, "oneBlockSword", "one_block_sword"),
+                new ItemOneBlockShovel(OneBlockMaterials.ONE_BLOCK_TOOL, "oneBlockShovel", "one_block_shovel"),
+                new ItemOneBlockHoe(OneBlockMaterials.ONE_BLOCK_TOOL, "oneBlockHoe", "one_block_hoe")
         };
 
         final Item[] itemBlocks = {

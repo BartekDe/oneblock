@@ -1,6 +1,8 @@
 package bartekde.oneblock;
 
 import bartekde.oneblock.proxy.IProxy;
+import bartekde.oneblock.tabs.OneBlockTab;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -27,6 +29,8 @@ public class OneBlock {
     public static IProxy proxy;
 
     public static Logger logger;
+
+    public static final CreativeTabs ONEBLOCK_TAB = new OneBlockTab("tabOneBlock");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {

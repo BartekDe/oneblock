@@ -16,6 +16,11 @@ public class ModelRegistryHandler {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         registerModel(MyItems.BASIC_ITEM);
+        registerModel(MyItems.ONE_BLOCK_AXE);
+        registerModel(MyItems.ONE_BLOCK_PICKAXE);
+        registerModel(MyItems.ONE_BLOCK_SWORD);
+        registerModel(MyItems.ONE_BLOCK_SHOVEL);
+        registerModel(MyItems.ONE_BLOCK_HOE);
         registerModel(Item.getItemFromBlock(MyBlocks.BASIC_BLOCK));
     }
 

@@ -1,11 +1,13 @@
 package bartekde.oneblock.item;
 
 import bartekde.oneblock.OneBlock;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSpade;
 
-public class ItemBasic extends Item {
+public class ItemOneBlockShovel extends ItemSpade {
 
-    public ItemBasic(String unlocalizedName, String registryName) {
+    public ItemOneBlockShovel(ToolMaterial material, String unlocalizedName, String registryName) {
+        super(material);
+
         setUnlocalizedName(OneBlock.MODID + "." + unlocalizedName);
         setRegistryName(registryName);
         setCreativeTab(OneBlock.ONEBLOCK_TAB);

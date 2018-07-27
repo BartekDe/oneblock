@@ -16,7 +16,7 @@ public class BlockBasic extends Block {
         super(material);
         setUnlocalizedName(OneBlock.MODID + "." + unlocalizedName);
         setRegistryName(registryName);
-        setCreativeTab(CreativeTabs.MISC);
+        setCreativeTab(OneBlock.ONEBLOCK_TAB);
         setSoundType(soundType);
     }
 
