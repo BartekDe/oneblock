@@ -1,4 +1,4 @@
-package bartekde.oneblock;
+package bartekde.oneblock.recipes;
 
 import bartekde.oneblock.init.MyItems;
 import net.minecraft.init.Items;

@@ -1,15 +1,17 @@
 package bartekde.oneblock;
 
 import bartekde.oneblock.proxy.IProxy;
+import bartekde.oneblock.recipes.OneBlockRecipes;
 import bartekde.oneblock.tabs.OneBlockTab;
+import bartekde.oneblock.world.gen.OneBlockWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
@@ -40,6 +42,8 @@ public class OneBlock {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         logger.info(OneBlock.NAME + " says HI!!!");
+        OneBlockRecipes.initSmelting();
+        GameRegistry.registerWorldGenerator(new OneBlockWorldGen(), 0);
     }
 
     @EventHandler
